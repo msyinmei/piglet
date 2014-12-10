@@ -1,0 +1,122 @@
+#the-scene {
+  width: 800px;
+  height: 600px;
+  background: url('images/background.png') top left no-repeat;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+  /*overflow: hidden;*/
+}
+
+#fence-far {
+  position: absolute;
+  top: 20px;
+  -webkit-animation: farfence 5s infinite linear;
+}
+
+@-webkit-keyframes farfence{
+  from {
+    left: 0px;
+  }
+  to {
+    left: -105px;
+  }
+}
+
+#fence-near{
+  position: absolute;
+  top: 100px;
+  -webkit-animation: nearfence 3s infinite linear;
+}
+
+@-webkit-keyframes nearfence{
+  from {
+    left: 0px;
+  }
+  to {
+    left: -280px;
+  }
+}
+
+
+#pig-leg-left-front{
+  position: absolute;
+  top: 350px;
+  left: 450px;
+  -webkit-animation: pigwalk 1s infinite alternate;
+}
+
+@-webkit-keyframes pigwalk{
+  from{
+  -webkit-transform: rotate(-20deg);
+  } to {
+  -webkit-transform: rotate(20deg);
+
+  }
+}
+
+#pig-leg-left-back{
+  position: absolute;
+  top:350px;
+  left: 200px;
+  -webkit-animation: pigwalk 1s infinite alternate;
+  -webkit-animation-delay: 3s;
+
+}
+#pig-tail{
+  position: absolute;
+  top: 240px;
+  left: 150px;
+  -webkit-animation: wag 1s infinite alternate;
+
+}
+
+@-webkit-keyframes wag{
+  from{
+  -webkit-transform: rotate(-20deg);
+  } to {
+  -webkit-transform: rotate(20deg);
+
+  }
+}
+
+#pig-body{
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  -webkit-animation: bounce .5s infinite alternate;
+}
+
+@-webkit-keyframes bounce{
+  from{
+  top: 245px;
+  } to {
+  top: 250px;
+
+  }
+}
+
+#pig-ear{
+  position: absolute;
+  top: 215px;
+  right: 210px;
+  -webkit-animation: wag .5s infinite alternate;
+
+}
+#pig-leg-right-front{
+  position: absolute;
+  top: 360px;
+  left: 430px;
+  -webkit-animation: pigwalk 1s infinite alternate;
+  -webkit-animation-delay: 3s;
+
+}
+#pig-leg-right-back{
+  position: absolute;
+  top: 360px;
+  left: 180px;
+  -webkit-animation: pigwalk 1s infinite alternate;
+
+
+
+}
